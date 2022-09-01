@@ -28,12 +28,22 @@ const multiply = function() {
   return total;
 };
 
-const power = function() {
-	
+const power = function(x, y) {
+	return x ** y;
 };
 
-const factorial = function() {
-	
+const factorial = function(x) {
+	if (x > 0) {
+    let total = 1;
+    for (let i = x; i > 0; i--) {
+      total *= i;
+    }
+    return total;
+  } else if (x == 0) {
+    return 1;
+  } else {
+    return "ERROR";
+  }
 };
 
 // Do not edit below this line
